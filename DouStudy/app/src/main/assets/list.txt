@@ -1,0 +1,3 @@
+["打开主界面1",11111,MainActivity.class]
+["打开主界面2",11112,MainActivity.class]
+["打开主界面3",11113,MainActivity.class]
