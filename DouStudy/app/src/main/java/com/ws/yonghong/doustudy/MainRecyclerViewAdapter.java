@@ -6,6 +6,7 @@ import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import java.util.List;
@@ -33,8 +34,7 @@ public class MainRecyclerViewAdapter extends RecyclerView.Adapter<MainRecyclerVi
             } else {
                 holder.item_tv_class.setText("");
             }
-
-            holder.mText.setOnClickListener(new View.OnClickListener() {
+            holder.llyt_view.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     if (list.get(position).getIntenClass() == null) {
@@ -53,11 +53,13 @@ public class MainRecyclerViewAdapter extends RecyclerView.Adapter<MainRecyclerVi
     }
 
     class ViewHolder extends RecyclerView.ViewHolder {
+        LinearLayout llyt_view;
         TextView mText;
         TextView item_tv_class;
 
         ViewHolder(View itemView) {
             super(itemView);
+            llyt_view= itemView.findViewById(R.id.llyt_view);
             mText = itemView.findViewById(R.id.item_tx);
             item_tv_class = itemView.findViewById(R.id.item_tv_class);
         }

@@ -1,3 +1,2 @@
 11111,波浪形的自定义动画效果,com.ws.yonghong.doustudy.activity.RipplesViewActivity
-111112,打开主界面2,com.ws.yonghong.doustudy.activity.RipplesViewActivity
-11114,打开主界面3,com.ws.yonghong.doustudy.activity.RipplesViewActivity
+111112,TackManager线程任务管理器功能,com.ws.yonghong.doustudy.activity.TaskManagerActivity

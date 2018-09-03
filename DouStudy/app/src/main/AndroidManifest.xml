@@ -3,6 +3,7 @@
     package="com.ws.yonghong.doustudy">
 
     <application
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -17,6 +18,7 @@
             </intent-filter>
         </activity>
         <activity android:name="com.ws.yonghong.doustudy.activity.RipplesViewActivity"/>
+        <activity android:name="com.ws.yonghong.doustudy.activity.TaskManagerActivity"/>
     </application>
 
 </manifest>
