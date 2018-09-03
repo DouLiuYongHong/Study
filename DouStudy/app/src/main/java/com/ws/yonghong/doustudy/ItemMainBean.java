@@ -5,12 +5,18 @@ import java.io.Serializable;
 public class ItemMainBean implements Serializable {
     long itemId = 0;
     String itemName = null;
-    Class<?> intenClass = null;
+    Class intenClass = null;
 
-    public ItemMainBean(long itemId, String itemName, Class<?> intenClass) {
-        this.itemId = itemId;
-        this.itemName = itemName;
-        this.intenClass = intenClass;
+    public ItemMainBean(String itemId, String itemName, String intenClass) {
+        Class clazz = null;
+        try {
+            this.itemId = Long.parseLong(itemId);
+            this.itemName = itemName;
+            clazz = Class.forName(intenClass);
+            this.intenClass = clazz;
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 
     public ItemMainBean() {
@@ -39,5 +45,14 @@ public class ItemMainBean implements Serializable {
 
     public void setIntenClass(Class<?> intenClass) {
         this.intenClass = intenClass;
+    }
+
+    @Override
+    public String toString() {
+        return "ItemMainBean{" +
+                "itemId=" + itemId +
+                ", itemName='" + itemName + '\'' +
+                ", intenClass=" + intenClass +
+                '}';
     }
 }

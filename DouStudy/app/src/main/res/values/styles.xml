@@ -8,4 +8,22 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <declare-styleable name="DiffuseView">
+        <!--扩散圆颜色-->
+        <attr name="diffuse_color" format="color"/>
+        <!--中心圆颜色-->
+        <attr name="diffuse_coreColor" format="color"/>
+        <!--中心圆图片-->
+        <attr name="diffuse_coreImage" format="reference"/>
+        <!--中心圆半径-->
+        <attr name="diffuse_coreRadius" format="float"/>
+        <!--扩散圆宽度,值越小越宽-->
+        <attr name="diffuse_width" format="integer"/>
+        <!--最大扩散宽度-->
+        <attr name="diffuse_maxWidth" format="integer"/>
+        <!--扩散速度，值越大越快-->
+        <attr name="diffuse_speed" format="integer"/>
+    </declare-styleable>
+
+
 </resources>

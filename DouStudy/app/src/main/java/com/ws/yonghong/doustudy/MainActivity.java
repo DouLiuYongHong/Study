@@ -7,6 +7,8 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
+import com.ws.yonghong.doustudy.utilcode.util.ResourceUtils;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -21,10 +23,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         initGetData();
         mRecyclerView = (RecyclerView) findViewById(R.id.rv_activity);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
+
+        mRecyclerView.addItemDecoration(new MainDividerDecoration(this));
 //初始化适配器
         mAdapter = new MainRecyclerViewAdapter(mList);
 //设置添加或删除item时的动画，这里使用默认动画
@@ -35,10 +38,20 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initGetData() {
-        try {
-            this.getAssets().open("list.txt");
-        } catch (IOException e) {
-            e.printStackTrace();
+
+        List<String> listStr = ResourceUtils.readAssets2List("list.txt");
+        if (listStr == null || listStr.isEmpty()) {
+            return;
+        }
+        for (String str : listStr) {
+            String[] strMany = str.split(",");
+            if (strMany.length == 3) {
+                ItemMainBean mItemMainBean = new ItemMainBean(strMany[0].trim(), strMany[1].trim(), strMany[2].trim());
+                if (mItemMainBean == null) {
+                    return;
+                }
+                mList.add(mItemMainBean);
+            }
         }
     }
 }

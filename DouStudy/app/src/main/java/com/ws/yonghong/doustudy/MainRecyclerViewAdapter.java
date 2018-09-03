@@ -27,7 +27,13 @@ public class MainRecyclerViewAdapter extends RecyclerView.Adapter<MainRecyclerVi
     @Override
     public void onBindViewHolder(final ViewHolder holder, final int position) {
         if (!TextUtils.isEmpty(list.get(position).itemName)) {
-            holder.mText.setText(list.get(position).itemName);
+            holder.mText.setText(list.get(position).getItemName());
+            if (list.get(position).getIntenClass() != null) {
+                holder.item_tv_class.setText(list.get(position).getIntenClass().getSimpleName());
+            } else {
+                holder.item_tv_class.setText("");
+            }
+
             holder.mText.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -48,10 +54,12 @@ public class MainRecyclerViewAdapter extends RecyclerView.Adapter<MainRecyclerVi
 
     class ViewHolder extends RecyclerView.ViewHolder {
         TextView mText;
+        TextView item_tv_class;
 
         ViewHolder(View itemView) {
             super(itemView);
             mText = itemView.findViewById(R.id.item_tx);
+            item_tv_class = itemView.findViewById(R.id.item_tv_class);
         }
     }
 
