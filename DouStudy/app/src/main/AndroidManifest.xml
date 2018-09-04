@@ -19,6 +19,9 @@
         </activity>
         <activity android:name="com.ws.yonghong.doustudy.activity.RipplesViewActivity"/>
         <activity android:name="com.ws.yonghong.doustudy.activity.TaskManagerActivity"/>
+        <activity android:name="com.ws.yonghong.doustudy.activity.DbManagerActivity"/>
+
+
     </application>
 
 </manifest>

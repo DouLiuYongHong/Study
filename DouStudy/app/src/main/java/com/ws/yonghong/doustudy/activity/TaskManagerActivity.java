@@ -7,6 +7,8 @@ import android.view.View;
 import com.ws.yonghong.doustudy.R;
 import com.ws.yonghong.doustudy.View.RipplesView;
 import com.ws.yonghong.doustudy.task.AbsTask;
+import com.ws.yonghong.doustudy.task.Callback;
+import com.ws.yonghong.doustudy.task.TaskController;
 import com.ws.yonghong.doustudy.task.TaskManager;
 import com.ws.yonghong.doustudy.utilcode.util.LogUtils;
 
