@@ -11,6 +11,7 @@ import com.ws.yonghong.doustudy.task.Callback;
 import com.ws.yonghong.doustudy.task.TaskController;
 import com.ws.yonghong.doustudy.task.TaskManager;
 import com.ws.yonghong.doustudy.utilcode.util.LogUtils;
+import com.ws.yonghong.doustudy.utilcode.util.TimeUtils;
 
 public class TaskManagerActivity extends AppCompatActivity {
 
@@ -27,6 +28,8 @@ public class TaskManagerActivity extends AppCompatActivity {
 
 
     public void start(View v) {
+        TimeUtils.getNowString();
+
         absTask = TaskManager.task().start(new AbsTask<String>() {
             @Override
             protected String doBackground() throws Throwable {

@@ -37,14 +37,38 @@ public class DbManagerActivity extends AppCompatActivity {
         mCursor = db.rawQuery("select * from " + TABLE_NAME, null);
     }
 
+    public void create2(View v) {
+        try {
+
+        } catch (Exception exp) {
+            exp.printStackTrace();
+        }
+    }
+
+    public void insert2(View v) {
+
+
+    }
+
+    public void delete2(View v) {
+
+    }
+
+    public void update2(View v) {
+        try {
+
+        } catch (Exception exp) {
+            exp.printStackTrace();
+        }
+    }
+
+    public void query2(View v) {
+
+    }
 
     public void create(View v) {
         try {
-            if (!db.isOpen()) {
-                db = mDbOpenHelper.getWritableDatabase();
-            }
-            db.execSQL(CREATE_TABLE);
-            db.close();
+
         } catch (Exception exp) {
             exp.printStackTrace();
         }
