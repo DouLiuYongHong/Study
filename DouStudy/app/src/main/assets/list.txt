@@ -1,3 +1,7 @@
 111111,波浪形的自定义动画效果,com.ws.yonghong.doustudy.activity.RipplesViewActivity
 111112,TackManager线程任务管理器功能,com.ws.yonghong.doustudy.activity.TaskManagerActivity
 111113,数据库的整理,com.ws.yonghong.doustudy.activity.DbManagerActivity
+111114,定位功能的整理,com.ws.yonghong.doustudy.activity.LocationActivity
+111115,Wifi锁功能的整理,com.ws.yonghong.doustudy.activity.WifiLockActivity
+
+
