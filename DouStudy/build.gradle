@@ -1,7 +1,7 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
-        //配置我们的工程的仓库地址
+    //配置我们的工程的仓库地址
 //    ScriptHandler mScriptHandler -> mScriptHandler.repositories {
 //        RepositoryHandler mRepositoryHandler ->
 //            mRepositoryHandler.google();
@@ -14,8 +14,7 @@ buildscript {
     }
     //配置我们的工程的"插件"依赖地址
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.1.4'
-        
+        classpath 'com.android.tools.build:gradle:3.2.0'
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -26,6 +25,7 @@ allprojects {
     repositories {
         google()
         jcenter()
+        maven { url "https://jitpack.io" }
     }
 }
 
@@ -46,9 +46,9 @@ this.gradle.buildFinished {
     println("gradle 执行完毕后")
 }
 
-def showInfo(){
+def showInfo() {
     //扩展参数的使用
-    if(isRelease == true){
+    if (isRelease == true) {
 
     }
     //文件属性的使用
@@ -56,10 +56,10 @@ def showInfo(){
     files("gradle").collect()
 }
 
-task task_hello{
+task task_hello {
     println("hello task")
 }
 
-tasks.create(name:"task_hello2"){
+tasks.create(name: "task_hello2") {
 
 }
