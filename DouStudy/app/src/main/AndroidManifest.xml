@@ -19,7 +19,10 @@
         </activity>
         <activity android:name="com.ws.yonghong.doustudy.activity.RipplesViewActivity"/>
         <activity android:name="com.ws.yonghong.doustudy.activity.TaskManagerActivity"/>
-        <activity android:name="com.ws.yonghong.doustudy.activity.DbManagerActivity"/>
+
+        <activity android:name="com.ws.yonghong.doustudy.function.locationbroadcastmanager.LocalBroadcastManagerActivity"/>
+        <activity android:name="com.ws.yonghong.doustudy.function.rxjavaretrofit.RxjavaRetrofitActivity"/>
+
 
 
     </application>
