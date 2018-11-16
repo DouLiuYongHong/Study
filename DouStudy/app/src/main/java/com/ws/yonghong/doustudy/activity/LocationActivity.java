@@ -14,11 +14,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.ws.yonghong.doustudy.R;
-import com.ws.yonghong.doustudy.View.RipplesView;
-import com.ws.yonghong.doustudy.task.AbsTask;
-import com.ws.yonghong.doustudy.task.TaskManager;
 import com.ws.yonghong.doustudy.utilcode.util.LogUtils;
-import com.ws.yonghong.doustudy.utilcode.util.TimeUtils;
 import com.ws.yonghong.doustudy.utilcode.util.ToastUtils;
 
 import java.util.List;

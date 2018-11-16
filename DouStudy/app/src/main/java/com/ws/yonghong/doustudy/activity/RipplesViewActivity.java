@@ -2,20 +2,10 @@ package com.ws.yonghong.doustudy.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.DefaultItemAnimator;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
-import com.ws.yonghong.doustudy.ItemMainBean;
-import com.ws.yonghong.doustudy.MainDividerDecoration;
-import com.ws.yonghong.doustudy.MainRecyclerViewAdapter;
 import com.ws.yonghong.doustudy.R;
-import com.ws.yonghong.doustudy.View.RipplesView;
-import com.ws.yonghong.doustudy.utilcode.util.ResourceUtils;
-
-import java.util.ArrayList;
-import java.util.List;
+import com.ws.yonghong.doustudy.view.RipplesView;
 
 public class RipplesViewActivity extends AppCompatActivity {
 

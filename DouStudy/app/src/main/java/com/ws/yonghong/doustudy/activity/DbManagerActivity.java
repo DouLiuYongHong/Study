@@ -1,7 +1,6 @@
 package com.ws.yonghong.doustudy.activity;
 
 import android.content.ContentValues;
-import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -11,11 +10,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.ws.yonghong.doustudy.R;
-import com.ws.yonghong.doustudy.View.RipplesView;
 import com.ws.yonghong.doustudy.db.old.helper.DbOpenHelper;
-import com.ws.yonghong.doustudy.task.AbsTask;
-import com.ws.yonghong.doustudy.task.TaskManager;
-import com.ws.yonghong.doustudy.utilcode.util.LogUtils;
 
 public class DbManagerActivity extends AppCompatActivity {
 

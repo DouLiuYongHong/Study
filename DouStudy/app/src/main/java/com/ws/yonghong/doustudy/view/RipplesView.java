@@ -1,4 +1,4 @@
-package com.ws.yonghong.doustudy.View;
+package com.ws.yonghong.doustudy.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
